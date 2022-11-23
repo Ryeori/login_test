@@ -1,0 +1,1 @@
+enum AuthenticationStrategy { email, none }
