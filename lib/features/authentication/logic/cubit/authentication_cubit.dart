@@ -1,12 +1,13 @@
 import 'package:bloc/bloc.dart';
-import 'package:danshulgin_login/features/authentication/models/user_authentication_model/user_authentication_model.dart';
-import 'package:danshulgin_login/features/authentication/repo/authentication_repo.dart';
-import 'package:danshulgin_login/features/authentication/utils/sign_in_response.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 
-part 'authentication_state.dart';
+import 'package:danshulgin_login/features/authentication/models/user_authentication_model/user_authentication_model.dart';
+import 'package:danshulgin_login/features/authentication/repo/authentication_repo.dart';
+import 'package:danshulgin_login/features/authentication/utils/sign_in_response.dart';
+
 part 'authentication_cubit.freezed.dart';
+part 'authentication_state.dart';
 
 @Singleton()
 class AuthenticationCubit extends Cubit<AuthenticationState> {
